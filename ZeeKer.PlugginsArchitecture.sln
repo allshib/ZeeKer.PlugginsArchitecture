@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeeKer.PlugginsArchitecture.API", "ZeeKer.PlugginsArchitecture.API\ZeeKer.PlugginsArchitecture.API.csproj", "{D75ADE23-9480-4334-A3E2-3BC9B202F492}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeeKer.PlugginsArchitecture", "ZeeKer.PlugginsArchitecture\ZeeKer.PlugginsArchitecture.csproj", "{1EF1C05B-CB3E-4ED1-B580-C245E5DD3B1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeeKer.PlugginsArchitecture.Abstractions", "ZeeKer.PlugginsArchitecture.Abstractions\ZeeKer.PlugginsArchitecture.Abstractions.csproj", "{3E27AADA-2AE8-4016-98D3-C41411298FFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeeKer.PlugginsArchitecture.Infrastructure", "ZeeKer.PlugginsArchitecture.Infrastructure\ZeeKer.PlugginsArchitecture.Infrastructure.csproj", "{D94F4473-DDDC-4C06-BDB7-AC3382B69505}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeeKer.PugginsArchetecture.HelloPluggin", "ZeeKer.PugginsArchetecture.HelloPluggin\ZeeKer.PugginsArchetecture.HelloPluggin.csproj", "{EF3CC722-F009-4D37-BA5A-D4D92A9058D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D75ADE23-9480-4334-A3E2-3BC9B202F492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D75ADE23-9480-4334-A3E2-3BC9B202F492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D75ADE23-9480-4334-A3E2-3BC9B202F492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D75ADE23-9480-4334-A3E2-3BC9B202F492}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EF1C05B-CB3E-4ED1-B580-C245E5DD3B1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EF1C05B-CB3E-4ED1-B580-C245E5DD3B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EF1C05B-CB3E-4ED1-B580-C245E5DD3B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EF1C05B-CB3E-4ED1-B580-C245E5DD3B1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E27AADA-2AE8-4016-98D3-C41411298FFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E27AADA-2AE8-4016-98D3-C41411298FFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E27AADA-2AE8-4016-98D3-C41411298FFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E27AADA-2AE8-4016-98D3-C41411298FFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D94F4473-DDDC-4C06-BDB7-AC3382B69505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D94F4473-DDDC-4C06-BDB7-AC3382B69505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D94F4473-DDDC-4C06-BDB7-AC3382B69505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D94F4473-DDDC-4C06-BDB7-AC3382B69505}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF3CC722-F009-4D37-BA5A-D4D92A9058D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF3CC722-F009-4D37-BA5A-D4D92A9058D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF3CC722-F009-4D37-BA5A-D4D92A9058D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF3CC722-F009-4D37-BA5A-D4D92A9058D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA06B513-6FE0-4ADC-B410-02F06964B4C9}
+	EndGlobalSection
+EndGlobal
