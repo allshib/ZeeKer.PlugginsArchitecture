@@ -1,9 +1,9 @@
 ﻿using System.Reflection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using ZeeKer.PlugginsArchitecture.Abstractions;
+using ZeeKer.Orion.Abstractions;
 
-namespace ZeeKer.PlugginsArchitecture;
+namespace ZeeKer.Orion;
 
 public static class PluginLoader
 {

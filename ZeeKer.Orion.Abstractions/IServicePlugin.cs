@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ZeeKer.PlugginsArchitecture.Abstractions;
+namespace ZeeKer.Orion.Abstractions;
 
 public interface IServicePlugin : IPlugin
 {

@@ -1,6 +1,6 @@
 
-using ZeeKer.PlugginsArchitecture;
-using ZeeKer.PlugginsArchitecture.API.Services;
+using ZeeKer.Orion;
+using ZeeKer.Orion.API.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

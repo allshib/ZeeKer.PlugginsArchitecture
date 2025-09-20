@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using System.Runtime.Loader;
 
-namespace ZeeKer.PlugginsArchitecture.Abstractions;
+namespace ZeeKer.Orion.Abstractions;
 public sealed class IsolatedPluginLoadContext : AssemblyLoadContext
 {
     private readonly AssemblyDependencyResolver _resolver;
