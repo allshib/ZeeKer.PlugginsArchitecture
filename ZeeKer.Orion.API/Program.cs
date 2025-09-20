@@ -1,6 +1,7 @@
 
 using ZeeKer.Orion;
 using ZeeKer.Orion.API.Services;
+using ZeeKer.Orion.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +10,7 @@ var hostContractVersion = new Version(1, 0, 0);
 builder.Services.AddAuthorization();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddInfrastructure();
 var plugins = PluginLoader.LoadPlugins(
     builder.Services,
     builder.Configuration,
