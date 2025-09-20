@@ -11,11 +11,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ZeeKer.PlugginsArchitecture.Infrastructure\ZeeKer.PlugginsArchitecture.Infrastructure.csproj" />
+    <ProjectReference Include="..\ZeeKer.Orion.Infrastructure\ZeeKer.Orion.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="plugins\ZeeKer.PugginsArchetecture.HelloPluggin.dll">
+    <None Update="plugins\ZeeKer.Orion.HelloPluggin.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

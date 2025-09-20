@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36414.22 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeeKer.PlugginsArchitecture.API", "ZeeKer.PlugginsArchitecture.API\ZeeKer.PlugginsArchitecture.API.csproj", "{D75ADE23-9480-4334-A3E2-3BC9B202F492}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeeKer.Orion.API", "ZeeKer.Orion.API\ZeeKer.Orion.API.csproj", "{D75ADE23-9480-4334-A3E2-3BC9B202F492}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeeKer.PlugginsArchitecture", "ZeeKer.PlugginsArchitecture\ZeeKer.PlugginsArchitecture.csproj", "{1EF1C05B-CB3E-4ED1-B580-C245E5DD3B1F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeeKer.Orion", "ZeeKer.Orion\ZeeKer.Orion.csproj", "{1EF1C05B-CB3E-4ED1-B580-C245E5DD3B1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeeKer.PlugginsArchitecture.Abstractions", "ZeeKer.PlugginsArchitecture.Abstractions\ZeeKer.PlugginsArchitecture.Abstractions.csproj", "{3E27AADA-2AE8-4016-98D3-C41411298FFA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeeKer.Orion.Abstractions", "ZeeKer.Orion.Abstractions\ZeeKer.Orion.Abstractions.csproj", "{3E27AADA-2AE8-4016-98D3-C41411298FFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeeKer.PlugginsArchitecture.Infrastructure", "ZeeKer.PlugginsArchitecture.Infrastructure\ZeeKer.PlugginsArchitecture.Infrastructure.csproj", "{D94F4473-DDDC-4C06-BDB7-AC3382B69505}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeeKer.Orion.Infrastructure", "ZeeKer.Orion.Infrastructure\ZeeKer.Orion.Infrastructure.csproj", "{D94F4473-DDDC-4C06-BDB7-AC3382B69505}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeeKer.PugginsArchetecture.HelloPluggin", "ZeeKer.PugginsArchetecture.HelloPluggin\ZeeKer.PugginsArchetecture.HelloPluggin.csproj", "{EF3CC722-F009-4D37-BA5A-D4D92A9058D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeeKer.Orion.HelloPluggin", "ZeeKer.Orion.HelloPluggin\ZeeKer.Orion.HelloPluggin.csproj", "{EF3CC722-F009-4D37-BA5A-D4D92A9058D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

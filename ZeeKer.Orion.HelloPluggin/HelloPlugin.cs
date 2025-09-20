@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using ZeeKer.PlugginsArchitecture.Abstractions;
+using ZeeKer.Orion.Abstractions;
 
-namespace ZeeKer.PugginsArchetecture.HelloPluggin;
+namespace ZeeKer.Orion.HelloPluggin;
 
 
 public class HelloPlugin : IApiPlugin

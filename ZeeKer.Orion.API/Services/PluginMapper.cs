@@ -1,6 +1,6 @@
-﻿using ZeeKer.PlugginsArchitecture.Abstractions;
+﻿using ZeeKer.Orion.Abstractions;
 
-namespace ZeeKer.PlugginsArchitecture.API.Services;
+namespace ZeeKer.Orion.API.Services;
 
 public static class PluginMapper
 {

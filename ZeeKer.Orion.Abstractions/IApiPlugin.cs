@@ -1,4 +1,4 @@
-﻿namespace ZeeKer.PlugginsArchitecture.Abstractions;
+﻿namespace ZeeKer.Orion.Abstractions;
 
 
 public interface IEndpointGroup

@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ZeeKer.PlugginsArchitecture\ZeeKer.PlugginsArchitecture.csproj" />
+    <ProjectReference Include="..\ZeeKer.Orion\ZeeKer.Orion.csproj" />
   </ItemGroup>
 
   <ItemGroup>
