@@ -10,14 +10,14 @@ public class HelloPlugin : IApiPlugin
 
     public string Name => "HelloPlugin";
 
-    public Version Version => new Version(1, 0, 0);
+    public Version Version => new Version(2, 0, 0);
 
     public Version MinHostVersion => new Version(1, 0, 0);
 
 
     public void MapEndpoints(IEndpointGroup group)
     {
-        group.MapGet("/hello", () => "Hello from HelloPlugin!");
+        group.MapGet("/hello", () => "Hello from HelloPlugin V2!");
     }
 
     //IPlugin IPlugin.Activate(IServiceCollection services, Type plugginType)

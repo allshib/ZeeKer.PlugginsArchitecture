@@ -15,7 +15,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="plugins\" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="plugins\ZeeKer.Orion.HelloPluggin.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="plugins\ZeeKer.Orion.HelloPluggin2.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
