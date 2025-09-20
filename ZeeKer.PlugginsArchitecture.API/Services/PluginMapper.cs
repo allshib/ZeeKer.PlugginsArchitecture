@@ -2,7 +2,7 @@
 
 namespace ZeeKer.PlugginsArchitecture.API.Services;
 
-public static class PlugginMapper
+public static class PluginMapper
 {
     public static void MapApiPlugins(
         IEndpointRouteBuilder aspnetEndpoints,

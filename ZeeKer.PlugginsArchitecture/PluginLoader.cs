@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using System.Reflection;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ZeeKer.PlugginsArchitecture.Abstractions;
 
@@ -20,8 +21,24 @@ public static class PluginLoader
             var alc = new IsolatedPluginLoadContext(dll);
             var asm = alc.LoadFromAssemblyPath(dll);
 
-            var pluginTypes = asm
-                .GetTypes()
+            IEnumerable<Type> candidateTypes;
+
+            try
+            {
+                candidateTypes = asm.GetTypes();
+            }
+            catch (ReflectionTypeLoadException ex)
+            {
+                candidateTypes = ex.Types.OfType<Type>();
+
+                foreach (var loaderException in ex.LoaderExceptions)
+                {
+                    Console.Error.WriteLine(
+                        $"Failed to load type from plugin assembly '{dll}': {loaderException.Message}");
+                }
+            }
+
+            var pluginTypes = candidateTypes
                 .Where(t => !t.IsAbstract && typeof(IPlugin).IsAssignableFrom(t))
                 .ToArray();
 

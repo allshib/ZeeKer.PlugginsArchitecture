@@ -4,22 +4,22 @@ using ZeeKer.PlugginsArchitecture.API.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Версия контракта (меняйте при breaking changes в Abstractions)
+// Г‚ГҐГ°Г±ГЁГї ГЄГ®Г­ГІГ°Г ГЄГІГ  (Г¬ГҐГ­ГїГ©ГІГҐ ГЇГ°ГЁ breaking changes Гў Abstractions)
 var hostContractVersion = new Version(1, 0, 0);
 
-// Базовые сервисы приложения...
+// ГЃГ Г§Г®ГўГ»ГҐ Г±ГҐГ°ГўГЁГ±Г» ГЇГ°ГЁГ«Г®Г¦ГҐГ­ГЁГї...
 builder.Services.AddAuthorization();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Грузим плагины (services stage)
+// ГѓГ°ГіГ§ГЁГ¬ ГЇГ«Г ГЈГЁГ­Г» (services stage)
 var plugins = PluginLoader.LoadPlugins(
     builder.Services,
     builder.Configuration,
     Path.Combine(AppContext.BaseDirectory, "plugins"),
     hostContractVersion);
 
-//// Подключаем вклад плагинов в авторизацию/операции
+PluginMapper.MapApiPlugins(app, plugins);
 //foreach (var p in plugins.Select(p => p.Instance))
 //{
 //    if (p is IAuthorizationContributor auth)
@@ -34,16 +34,16 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
 
-// Мапим основные эндпойнты ядра...
+// ГЊГ ГЇГЁГ¬ Г®Г±Г­Г®ГўГ­Г»ГҐ ГЅГ­Г¤ГЇГ®Г©Г­ГІГ» ГїГ¤Г°Г ...
 app.MapGet("/", () => Results.Ok("Host OK"));
 
-// Мапим эндпойнты плагинов
+// ГЊГ ГЇГЁГ¬ ГЅГ­Г¤ГЇГ®Г©Г­ГІГ» ГЇГ«Г ГЈГЁГ­Г®Гў
 PlugginMapper.MapApiPlugins(app, plugins);
 
 //// Healthchecks
 //app.MapHealthChecks("/health");
 
-// Авторизация/аутентификация по месту
+// ГЂГўГІГ®Г°ГЁГ§Г Г¶ГЁГї/Г ГіГІГҐГ­ГІГЁГґГЁГЄГ Г¶ГЁГї ГЇГ® Г¬ГҐГ±ГІГі
 app.UseAuthorization();
 
 app.Run();
